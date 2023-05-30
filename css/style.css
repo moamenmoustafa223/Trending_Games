@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+
+}
+body{
+    background-color: #272B30;
+    font-family: 'Shantell Sans', cursive;
+}
+.header-bg{
+    background-image: url(../images/wraper.png);
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+}
+.navbar{
+ top: 0px;
+ background-color: #3A497B;
+ z-index: 1;
+}
+.card{
+    transition: transform .5s , filter .5s .5s;
+    filter: grayscale(.7);
+    cursor:pointer;
+    min-height: 450px;
+}
+.card:hover{
+    filter: grayscale(0);
+    transform: scale(1.06);
+}
+.nav-link{
+    color: rgb(161, 161, 161);
+}
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+    color: #ffffff;
+}
+.detiles{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3A497B;
+    z-index: 999;
+   
+}
+.fa-x{
+    cursor: pointer;
+}
